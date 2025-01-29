@@ -57,7 +57,7 @@ codigoPostal: '12345'
 ```js
 // GaleriaImagenes (Array de Objetos)
 // https://rickandmortyapi.com/
-const iamgeList = [
+const imageList = [
 { src: 'https://rickandmortyapi.com/api/character/avatar/1.jpeg&#39;, alt: 'Rick Sanchez' },
 { src: 'https://rickandmortyapi.com/api/character/avatar/2.jpeg&#39;, alt: 'Morty Smith' },
 { src: 'https://rickandmortyapi.com/api/character/avatar/3.jpeg&#39;, alt: 'Summer Smith' },
