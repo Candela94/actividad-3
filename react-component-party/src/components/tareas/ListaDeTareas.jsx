@@ -12,7 +12,7 @@ export const ListaDeTareas = ({tareas}) => {
         
         <h2>Mi lista de tareas</h2>
 
-        <ul>
+     
             {
                 tareas.map(tarea =>  (
 
@@ -24,7 +24,7 @@ export const ListaDeTareas = ({tareas}) => {
 
                 ))
             }
-        </ul>
+       
       
         
         </>

@@ -10,6 +10,8 @@ import { GaleriaImagenes } from './components/GaleriaDeImagenes'
 
 import { BlogPost } from './components/BlogPost'
 
+import { AlertBox } from './components/AlertBox'
+
 
 
 const tareas = [
@@ -23,8 +25,6 @@ const tareas = [
 
 
 ];
-
-
 
 
 
@@ -50,6 +50,11 @@ const imageList = [
 ];
 
 
+const status = {
+warning: "orange",
+error: "red",
+success:"green",
+}
 
 
 
@@ -70,21 +75,27 @@ function App() {
 
 
       {/* Ejercicio 2 */}
-      <ListaDeTareas  tareas={tareas}/>
+      {/* <ListaDeTareas  tareas={tareas}/> */}
 
 
       {/* Ejercicio 3 */}
-      <PerfilUsuario {...userData} />
+      {/* <PerfilUsuario {...userData} /> */}
 
 
 
-{/* Ejercicio 4 */}
-      <GaleriaImagenes imagenes={imageList}/>
+      {/* Ejercicio 4 */}
+      <GaleriaImagenes imageList={imageList}/>
 
 
       {/* Ejercicio 5 */}
-      <BlogPost nombre='BBK Live Festival' autor='Maria Martinez' fecha= '24-06- 2023'>  </BlogPost>
+      <BlogPost nombre='BBK Live Festival' autor='Maria Martinez' fecha= '24-06- 2023'> 
+      </BlogPost>
 
+
+    {/* Ejercicio alert box */}
+    <AlertBox status="error">Este es mi mensaje de error</AlertBox>
+    <AlertBox status="success">Este es mi mensaje de confirmación</AlertBox>
+    <AlertBox status="warning">Este es mi mensaje de warning</AlertBox>
 
     </>
   )
